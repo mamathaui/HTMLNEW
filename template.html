@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>my title</title>
+        <style>
+        *{
+            box-sizing: border-box;  
+        }
+        body{
+            margin: 0px;
+         background-color: beige;
+        }
+        .header{
+            background-color: #666666;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar{
+            overflow: hidden;
+            background-color: #666666;
+        }
+        
+        .column1{
+            float:left;
+            padding:10px;
+            width:33.33%;
+            background-color: rgb(199, 241, 201);
+        }
+        .column2{
+            float:left;
+            padding:10px;
+            width:33.33%;
+            background-color: rgb(231, 231, 179);
+        }
+        .column3{
+            float:left;
+            padding:10px;
+            width:33.33%;
+            background-color: rgb(199, 241, 201);
+        }
+        .row::after{
+            content: "";
+            display: table;
+            clear:both;
+        }
+        .row{
+            height: 300px;
+        }
+        @media only screen and (max-width: 600px) {
+  .column1,.column2,.column3 {
+    width: 100%;
+  }
+}   
+        h1{
+            color: rgb(10, 10, 8);
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+           // border: 1px red solid;
+            width: 160px;
+            height: 40px;
+            background-color:#6d2e2e;
+            text-align: center;
+            line-height: 40px;
+            float: left;
+            
+            margin-right: 10px;
+        }
+        li:hover{
+            background-color: rgb(197, 163, 122);
+            cursor: pointer;
+        }
+        h3{
+            color: chocolate;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .footer{
+            background-color: rgb(51, 47, 47);
+            text-align: center;
+            height: 100px;
+        }
+        .scroll{
+            background-color: darksalmon;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="header">
+         <h1>My Website</h1>
+    <div class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    
+                </ul>
+                </div>
+            </div>
+            <div class="scroll">
+            <marquee>
+                <h1>this is scrolling</h1>
+            </marquee>
+            </div>
+            <div class="row">
+                <div class="column1">
+                <h2>heading1</h2>
+                <p>
+                        A paragraph is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used A paragraph is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used 
+                </p>
+            </div>
+            <div class="column2">
+                    <h2>heading2</h2>
+                    <p>
+                            A paragraph is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used A paragraph is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used 
+                    </p>
+                </div>
+                <div class="column3">
+                        <h2>heading3</h2>
+                        <p>
+                                A paragraph is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used A paragraph is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used 
+                        </p>
+                    </div>
+        </div>
+        <div class="footer"> 
+                <h3>Footer</h3>
+                <a href="#">Home</a>&nbsp;&nbsp;
+                <a href="#">About</a>&nbsp;&nbsp;
+                <a href="#">Contact</a>&nbsp;&nbsp;
+                <a href="#">Gallery</a>&nbsp;&nbsp;
+                <a href="#">Blogs</a>&nbsp;&nbsp;
+        </div>
+        
+        
+    </body>
+</html>
